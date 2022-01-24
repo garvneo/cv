@@ -45,7 +45,14 @@ hr {
 	margin: 50px auto 50px auto;
 }
 
+.website:hover {
+	color: red;
+}
 	
+.website-detail {
+	color: #30E3CA;
+}
+
 .top-container{
 	background-color: #E4F9F5;
 	position: relative;
