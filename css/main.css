@@ -2,17 +2,11 @@
 	height: 10px;
 	width: 20;
 }
-/*font-family: 'Licorice', cursive;
-font-family: 'Merriweather Sans', sans-serif;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Sacramento', cursive;
-11999E
-40514E
-*/
+
 body {
 	margin: 0px;
 	text-align: center;
-	font-family: 'Montserrat', sans-serif,cursive;
+	font-family: 'Constantania', serif,cursive;
 }
 
 h1{
@@ -45,6 +39,10 @@ hr {
 	margin: 50px auto 50px auto;
 }
 
+.website {
+	color: #1bad9a;
+}
+
 .website:hover {
 	color: red;
 }
@@ -63,11 +61,26 @@ hr {
 	width: 50%;
 	margin: 50px auto 50px auto;
 	line-height: 2;
+	padding: 1%;
+	background-color: #E4F9F5;
+}
+
+.myresume {
+	border-width: 10px;
+	padding: 1%;
+	margin: 1% 18%;
+	background-color: #E4F9F5;
+}
+
+.skills {
+	border-width: 10px;
+	padding: 1%;
+	margin: 1% 18%;
+	background-color: #E4F9F5;
 }
 
 .skill-row {
-	width: 50%;
-	margin: 100px auto 100px auto;
+	margin: 10% 5% ;
 	text-align: left;
 	line-height: 2;
 }
@@ -75,9 +88,9 @@ hr {
 
 .bottom-container{
 	background-color: #E4F9F5;
-	margin: 75px auto 0 auto;
-	padding-bottom: 50px;
-	padding-top:50px;
+	margin: auto;
+	padding-bottom: 1%;
+	padding-top:2%;
 }
 
 .footer-link {
@@ -119,6 +132,7 @@ hr {
 .copyright-para{
 	font-family: cursive;
 	font-size:.75em;
+	color: red;
 }
 
 #contact-para{
@@ -151,6 +165,13 @@ hr {
   background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
   text-decoration: none;
 }
+
+.btn + br {
+    display: block;
+    content: '';
+    margin-top: 40px;
+}
+
 
 .footer-link:hover {
 	color:red
