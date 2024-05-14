@@ -1,25 +1,74 @@
 #profile {
-	height: 10px;
-	width: 20;
+	height: 5%;
+	width: 10%;
 }
 
 body {
-	margin: 0px;
+	margin: 0%;
 	text-align: center;
 	font-family: 'Constantania', serif,cursive;
 }
 
-h1{
-	color: #30E3CA;
-	margin: 50px auto 0 auto;
-	font-family: 'Sacramento', cursive;
-	font-size: 5.625rem;
+.top-container {
+    background-color: #E4F9F5;
+    position: relative;
+    padding-top: 9%;
+}
+
+h1 {
+    color: #30E3CA;
+    margin: 5% auto 0 auto;
+    font-family: 'Sacramento', cursive;
+    font-size: 5vw;
 }
 
 .subtitle {
-	font-size: 2rem;
-	color: black;
-	font-family: 'Montserrat', sans-serif;
+    font-size: 2vw;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.top-cloud {
+    position: absolute;
+    right: 23%; 
+    top: 10%; 
+    width: 15%; 
+}
+
+.bottom-cloud {
+    position: absolute;
+    left: 23%;
+	top: 48%;
+    width: 15%;
+}
+
+/* Add media queries for adjusting properties based on screen size */
+@media screen and (max-width: 51.0417%) {
+    h1 {
+        font-size: 8vw;
+    }
+    
+    .subtitle {
+        font-size: 3vw;
+    }
+    
+    .top-cloud, .bottom-cloud {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 41.67%) {
+    h1 {
+        font-size: 10vw;
+    }
+    
+    .subtitle {
+        font-size: 4vw;
+    }
+    
+    .top-cloud, .bottom-cloud {
+        width: 40%;
+    }
 }
 
 h2{
@@ -32,11 +81,21 @@ h3{
 }
 
 hr {
-	border-color: grey;
-	border-style: dotted none none;
-	border-width:5px;
-	width: 5%;
-	margin: 50px auto 50px auto;
+    border: none;
+    height: 5px; 
+    background: linear-gradient(to right, rgba(48, 227, 202, 0), rgba(48, 227, 202, 0.75), rgba(48, 227, 202, 0));
+    animation: pulse 2s infinite alternate; 
+    width: 20%; 
+    margin: 3% auto; 
+}
+
+@keyframes pulse {
+    0% {
+        width: 4%; 
+    }
+    100% {
+        width: 70%; 
+    }
 }
 
 .website {
@@ -51,29 +110,23 @@ hr {
 	color: #30E3CA;
 }
 
-.top-container{
-	background-color: #E4F9F5;
-	position: relative;
-	padding-top: 100px; 
-}
-
 .profile {
 	width: 50%;
-	margin: 50px auto 50px auto;
+	margin: 4% auto 2.5% auto;
 	line-height: 2;
 	padding: 1%;
 	background-color: #E4F9F5;
 }
 
 .myresume {
-	border-width: 10px;
+	border-width: 2%;
 	padding: 1%;
 	margin: 1% 18%;
 	background-color: #E4F9F5;
 }
 
 .skills {
-	border-width: 10px;
+	border-width: 2%;
 	padding: 1%;
 	margin: 1% 18%;
 	background-color: #E4F9F5;
@@ -95,38 +148,25 @@ hr {
 
 .footer-link {
 	color: #11999E;
-	margin-left: 50px;
-	margin-right: 50px;
+	margin-left: 3%;
+	margin-right: 3%;
 	text-decoration: none;
 }
 
 .computer-img {
 	width: 30%;
 	float: left;
-	margin-right: 30px;
+	margin-right: 5%;
 }
 
 .mountain-img {
 	width: 30%;
 	float: right;
-	margin-left: 30px;
+	margin-left: 5%;
 }
 
 #profile-img {
 	width:30%;
-}
-
-.bottom-cloud {
-	position: absolute;
-	left: 300px;
-	top: 380px;
-	}	
-
-.top-cloud {
-	position: absolute;
-	right: 300px;
-	top: 50px;
-
 }
 
 .copyright-para{
@@ -134,44 +174,6 @@ hr {
 	font-size:.75em;
 	color: red;
 }
-
-#contact-para{
-	margin-bottom:50px;
-}
-
-.btn {
-  background: #11cdd4;
-  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
-  background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
-  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
-  background-image: -o-linear-gradient(top, #11cdd4, #11999e);
-  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
-  -webkit-border-radius: 8;
-  -moz-border-radius: 8;
-  border-radius: 8px;
-  font-family: 'Montserrat', sans-serif;
-  color: #ffffff;
-  font-size: 20px;
-  padding: 10px 20px 10px 20px; 
-  text-decoration: none;
-}
-
-.btn:hover {
-  background: #30e3cb;
-  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
-  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
-  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
-  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
-  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
-  text-decoration: none;
-}
-
-.btn + br {
-    display: block;
-    content: '';
-    margin-top: 40px;
-}
-
 
 .footer-link:hover {
 	color:red
