@@ -42,7 +42,7 @@ h1 {
     width: 15%;
 }
 
-/* Add media queries for adjusting properties based on screen size */
+/* Media queries for adjusting properties based on screen size */
 @media screen and (max-width: 51.0417%) {
     h1 {
         font-size: 8vw;
