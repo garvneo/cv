@@ -387,3 +387,30 @@ hr {
 .star-fixed {
     display: none; /* Hide the moon by default */
 }
+
+
+/* Animated Header */
+.animated-header {
+    font-size: 1.5em;
+    text-shadow: 0 0 10px rgba(170, 255, 0, 0.8); /* Initial text shadow */
+    animation: pulsate 2s infinite alternate;
+  }
+  
+  @keyframes pulsate {
+    0% {
+      text-shadow: 0 0 10px rgba(194, 223, 130, 0.8); /* Initial shadow */
+    }
+    100% {
+      text-shadow: 0 0 20px rgba(170, 255, 0, 0.8); /* Increased shadow */
+    }
+  }
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
